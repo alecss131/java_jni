@@ -1,0 +1,7 @@
+/.idea
+/cmake-*
+*.exe
+/out
+*.class
+*.lib
+*.dll
