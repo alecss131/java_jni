@@ -24,7 +24,7 @@ add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy_if_different
         $<TARGET_FILE:${PROJECT_NAME}>
-        ${CMAKE_CURRENT_SOURCE_DIR}/${PROJ_JSRC}.dll)
+        ${CMAKE_CURRENT_SOURCE_DIR}/${PROJ_JSRC}${CMAKE_SHARED_LIBRARY_SUFFIX})
 #run java .class file dependent on .dll file
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
         COMMAND ${Java_JAVA_EXECUTABLE} -Djava.library.path=${CMAKE_CURRENT_SOURCE_DIR} -cp ${CMAKE_CURRENT_SOURCE_DIR} ${PROJ_JSRC})

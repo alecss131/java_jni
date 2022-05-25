@@ -15,6 +15,14 @@ extern "C" {
 JNIEXPORT void JNICALL Java_HelloWorld_print
   (JNIEnv *, jobject);
 
+/*
+ * Class:     HelloWorld
+ * Method:    sum
+ * Signature: (II)I
+ */
+JNIEXPORT jint JNICALL Java_HelloWorld_sum
+  (JNIEnv *, jobject, jint, jint);
+
 #ifdef __cplusplus
 }
 #endif
