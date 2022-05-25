@@ -23,6 +23,14 @@ JNIEXPORT void JNICALL Java_HelloWorld_print
 JNIEXPORT jint JNICALL Java_HelloWorld_sum
   (JNIEnv *, jobject, jint, jint);
 
+/*
+ * Class:     HelloWorld
+ * Method:    getLine
+ * Signature: (Ljava/lang/String;)Ljava/lang/String;
+ */
+JNIEXPORT jstring JNICALL Java_HelloWorld_getLine
+  (JNIEnv *, jobject, jstring);
+
 #ifdef __cplusplus
 }
 #endif
