@@ -31,6 +31,14 @@ JNIEXPORT jint JNICALL Java_HelloWorld_sum
 JNIEXPORT jstring JNICALL Java_HelloWorld_getLine
   (JNIEnv *, jobject, jstring);
 
+/*
+ * Class:     HelloWorld
+ * Method:    sort
+ * Signature: ([I)[I
+ */
+JNIEXPORT jintArray JNICALL Java_HelloWorld_sort
+  (JNIEnv *, jobject, jintArray);
+
 #ifdef __cplusplus
 }
 #endif
